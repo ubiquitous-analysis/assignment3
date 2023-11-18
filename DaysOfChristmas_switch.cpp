@@ -31,18 +31,32 @@
 
 #include <iostream>
 using namespace std;
-void DaysOfChristmas_switch ( void )
-{
+// void DaysOfChristmas_switch ( void )
+// {
    // This function must output to standard output the lyrics for "The 12 Days of Christmas".
    // To get a good grade the lyrics must exactly match the lyrics in the file "The 12 Days of Christmas.txt"
    // You must use a non-trivial switch statement in your code.
 
    // remove the line below.
    
-
-   cout << "<The 12 Days of Christmas>" << endl;
-   for (unsigned long long i{0}; i<= 12; i++){
-      cout << fmt::format("On the {}{} day of Christmas/nmy true love sent to me:")
+int main(){
+   cout << "The 12 Days of Christmas\n";
+   for (unsigned long long i{1}; i<= 12; i++){
+      cout << "\nOn the " << i;
+      switch (i){
+         case 1:
+            cout << "st";
+            break;
+         case 2:
+            cout << "nd";
+            break;
+         case 3:
+            cout << "rd";
+            break;
+         default:
+            cout << "th";
+      }
+      cout << " day of Christmas\nmy true love sent to me:\n";
       switch ( i )
       {
          case 12:
@@ -66,13 +80,13 @@ void DaysOfChristmas_switch ( void )
          case 3:
             cout << "3 French Hens\n";
          case 2:
-            cout << "2 Turtle Doves\nand";
+            cout << "2 Turtle Doves\nand ";
          default:
-            cout << "a Partrige in a Pear Tree";
+            cout << "a Partridge in a Pear Tree\n";
          
       }; //Use a non-trivial switch statement in your code.
    }
 
-   return ;
+  // return ;
 
 }

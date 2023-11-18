@@ -2,8 +2,8 @@
 // Simon Fraser University
 
 #include <iostream>
-//#include <fmt/format.h>
-//using namespace fmt;
+#include <fmt/format.h>
+using namespace fmt;
 
 void DaysOfChristmas_switch ( void )
 ;
