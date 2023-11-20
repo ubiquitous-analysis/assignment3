@@ -31,15 +31,8 @@
 
 #include <iostream>
 using namespace std;
-// void DaysOfChristmas_switch ( void )
-// {
-   // This function must output to standard output the lyrics for "The 12 Days of Christmas".
-   // To get a good grade the lyrics must exactly match the lyrics in the file "The 12 Days of Christmas.txt"
-   // You must use a non-trivial switch statement in your code.
+ void DaysOfChristmas_switch ( void ){
 
-   // remove the line below.
-   
-int main(){
    cout << "The 12 Days of Christmas\n";
    for (unsigned long long i{1}; i<= 12; i++){
       cout << "\nOn the " << i;
@@ -84,9 +77,9 @@ int main(){
          default:
             cout << "a Partridge in a Pear Tree\n";
          
-      }; //Use a non-trivial switch statement in your code.
+      }
    }
 
-  // return ;
+   return ;
 
 }

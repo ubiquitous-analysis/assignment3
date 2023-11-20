@@ -1,7 +1,7 @@
 void DaysOfChristmas_smallCode ( void )
 {
    cout << "The 12 Days of Christmas\n";
-   for ( int i = 1; i < 13; i++){
+   for ( int i = 1}; i < 13; i++){
       cout << "\nOn the " << i;
       switch (i){
          case 1:
@@ -51,4 +51,4 @@ void DaysOfChristmas_smallCode ( void )
 
 }
 
-
+}
