@@ -9,11 +9,10 @@ void DaysOfChristmas_switch ( void )
 ;
 void DaysOfChristmas_smallCode ( void )
 ;
-
 int main( ) {
    DaysOfChristmas_switch( );
 
-   //DaysOfChristmas_smallCode( );
+   DaysOfChristmas_smallCode( );
 
    return 0;
 } 

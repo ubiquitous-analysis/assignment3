@@ -54,26 +54,37 @@ using namespace std;
       {
          case 12:
             cout << "12 Drummers Drumming\n";
+            [[fallthrough]];
          case 11:
             cout << "11 Pipers Piping\n";
+            [[fallthrough]];
          case 10:
             cout << "10 Lords a Leaping\n";
+            [[fallthrough]];
          case 9:
             cout << "9 Ladies Dancing\n";
+            [[fallthrough]];
          case 8:
             cout << "8 Maids a Milking\n";
+            [[fallthrough]];
          case 7:
             cout << "7 Swans a Swimming\n";
+            [[fallthrough]];
          case 6:
             cout << "6 Geese a Laying\n";
+            [[fallthrough]];
          case 5:
             cout << "5 Golden Rings\n";
+            [[fallthrough]];
          case 4:
             cout << "4 Calling Birds\n";
+            [[fallthrough]];
          case 3:
             cout << "3 French Hens\n";
+            [[fallthrough]];
          case 2:
             cout << "2 Turtle Doves\nand ";
+            [[fallthrough]];
          default:
             cout << "a Partridge in a Pear Tree\n";
          
