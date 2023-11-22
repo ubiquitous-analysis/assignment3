@@ -1,22 +1,18 @@
 /******************************************************************************
 ;@
-;@ Student Name 1: student1
-;@ Student 1 #: 123456781
-;@ Student 1 userid (email): stu1 (stu1@sfu.ca)
-;@
-;@ Student Name 2: student2
-;@ Student 2 #: 123456782
-;@ Student 2 userid (email): stu2 (stu2@sfu.ca)
-;@
+;@ Student Name 1: Nathan Boersma
+;@ Student 1 #: 301591227
+;@ Student 1 userid (email):  njb14@sfu.ca
+
 ;@ Below, edit to list any people who helped you with the code in this file and also DaysOfChristmas_smallCode.cpp,
 ;@      or put ‘none’ if nobody helped (the two of) you.
 ;@
-;@ Helpers: _everybody helped us/me with the assignment (list names or put ‘none’)__
+;@ Helpers: none
 ;@
 ;@ Also, reference resources beyond the course textbook and the course pages on Canvas
 ;@ that you used in making your submission (including both .cpp files).
 ;@
-;@ Resources:  ___________
+;@ Resources: none
 ;@
 ;@% Instructions:
 ;@ * Put your name(s), student number(s), userid(s) in the above section.
@@ -34,9 +30,12 @@ using namespace std;
  void DaysOfChristmas_switch ( void ){
 
    cout << "The 12 Days of Christmas\n";
-   for (unsigned long long i{1}; i<= 12; i++){
-      cout << "\nOn the " << i;
-      switch (i){
+   for (unsigned long long day_number {1}; day_number<= 12; day_number++){
+      cout << "\nOn the " << day_number;
+      switch (day_number){
+         //This switch statement prints the ending of the number, 
+         //since it changes for each of the first few verses
+      
          case 1:
             cout << "st";
             break;
@@ -50,11 +49,15 @@ using namespace std;
             cout << "th";
       }
       cout << " day of Christmas\nmy true love sent to me:\n";
-      switch ( i )
+      //This switch statement adds the lyrics for each day
+      //Since day 1 is at the bottom, as the day gets higher, the
+      //statements fall through and each of the previous days is also output
+      switch ( day_number )
       {
          case 12:
             cout << "12 Drummers Drumming\n";
             [[fallthrough]];
+            //fallthrough attributes prevent the compiler from returning a warning
          case 11:
             cout << "11 Pipers Piping\n";
             [[fallthrough]];
